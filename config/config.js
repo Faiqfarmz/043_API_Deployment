@@ -1,6 +1,5 @@
 require("dotenv").config();
 
-
 const development = {
     username: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
@@ -11,7 +10,7 @@ const development = {
 };
 
 const production = {
-    user_env_variable: "POSTGRES_URL",
+    use_env_variable: "POSTGRES_URL",
     dialect: "postgres",
     dialectOptions: {
         ssl: {
